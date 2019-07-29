@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"fourled\startup_stm32f103xb.o"
+"fourled\main.o"
+"fourled\stm32f1xx_it.o"
+"fourled\stm32f1xx_hal_msp.o"
+"fourled\stm32f1xx_hal_gpio_ex.o"
+"fourled\stm32f1xx_hal_tim.o"
+"fourled\stm32f1xx_hal_tim_ex.o"
+"fourled\stm32f1xx_hal.o"
+"fourled\stm32f1xx_hal_rcc.o"
+"fourled\stm32f1xx_hal_rcc_ex.o"
+"fourled\stm32f1xx_hal_gpio.o"
+"fourled\stm32f1xx_hal_dma.o"
+"fourled\stm32f1xx_hal_cortex.o"
+"fourled\stm32f1xx_hal_pwr.o"
+"fourled\stm32f1xx_hal_flash.o"
+"fourled\stm32f1xx_hal_flash_ex.o"
+"fourled\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "FourLED\FourLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FourLED.map" -o FourLED\FourLED.axf
